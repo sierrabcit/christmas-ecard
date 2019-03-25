@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Playball');
+#wrapper{
+    width: 970px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    left:0px;
+    right: 0px;
+    margin: auto;
+    border: 10px solid darkred;
+    background-color:skyblue;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+.controls {
+  position: fixed; 
+}
+.controls .musicbtn {
+  font-family: 'Montserrat',sans-serif;
+  background-color: darkred;
+  color:white;
+  font-size: 1em;
+  padding:5px;
+  border-radius: 15px;
+  width:110px;
+  height:40px;
+}
+
+#title{
+    font-family: 'Playball', cursive;
+    z-index: 5;
+    color:darkred;
+    position: absolute;
+    top: 28%;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    font-size: 5em;
+    text-align: center;
+    text-shadow:1.5px 1px white;
+    animation: blink 2s infinite;
+}
+#title:hover{
+    animation:none;
+}
+.subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size:1.5em;
+  text-align: center;
+  position:absolute;
+  left:25%;
+  top:40%;
+/*  animation: fade 6s; */
+}
+#reindeer{
+  width:300px;
+  height:auto;
+  position: absolute;
+  left:33%;
+  top:420px;
+  animation: float 6s ease-in-out infinite;
+}
+/*
+#window{
+    width: 89px;
+    height: 139px;
+    position: absolute;
+    bottom:18.3%;
+    left: 360px;
+    opacity:1; 
+}
+@keyframes fade {
+  0% {
+    opacity:0%;
+  }
+  50% {
+    opacity:50%;
+  }
+  100% {
+    opacity:100%;
+  }
+}
+*/
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+}
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes moving1 {
+    33% {right:60%;}
+}
+@keyframes moving2{
+    50% {left: 80%;}
+}
+@keyframes moving3{
+    50% {left: 80%;}
+}
+@keyframes blink {
+     0%{     
+       color: darkred;    
+    }
+    49%{
+      color: transparent;
+    }
+    50%{
+      color: transparent; 
+    }
+    99%{  
+      color:transparent; 
+  }
+    100%{ 
+      color: darkred;  
+  }
+}
+@keyframes Opa{
+    30% {opacity: 0;}
+    32% {opacity: 1;}
+    50% {opacity: 0.4;}
+    52% {opacity: 1;}
+    100% {opacity: 0.3;}  
+}
+@keyframes swing{
+  0% {
+    transform:rotate(6deg);
+  }
+  100% {
+    transform:rotate(-6deg);
+  }
+}
+@keyframes opa2{
+    50% {opacity: 0.7;}
+}
+@keyframes jump {
+    50% {bottom:20%;}
+}
+/*
+@keyframes bounce-left-arrow{
+  50% {right: 0%;}
+}
+@keyframes bounce-right-arrow{
+  50% {left:0%;}
+*/
+}
+@keyframes wiggle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes rotate {
+    50% {bottom:20%; transform: rotateY(180deg);}
+}
+@keyframes move {
+    50% {right:30%; transform: rotatey(0deg);}
+    51% {transform: rotateY(180deg);}
+    100% {transform: rotatey(180deg);} 
+}
+
+
+/*========================= regardless page, class selector ========================== */
+
+h2{
+    font-family: 'Playball', cursive;   
+}
+h5, h6, p{
+    font-family: 'Montserrat', sans-serif;
+} 
+#left{
+    top: 44%;
+    left: 2%;
+    display: none;
+    z-index: 10;
+/*    animation: bounce-left-arrow ease-in-out 1s infinite;*/
+}
+#right{
+    top: 44%;
+    right: 2%;
+    z-index: 40;
+/*    animation: bounce-right-arrow ease-in-out 1s infinite;*/
+}
+.pageButton{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    padding:5px;
+    position: absolute;
+    cursor: pointer;
+}
+/*
+.pageButton:hover{
+    background-color: #8EAD3A;
+}
+*/
+.additional{
+    cursor: pointer;
+}
+#factNum{
+    font-family: 'Playball', cursive;
+    margin: 0;
+    font-size: 4.5em;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    color: white;
+}
+.fact{
+    display: none;
+    position: absolute;
+    width: 55%;
+    height: auto;
+    margin:auto;
+    padding:0.5rem 2rem 1.5rem 2rem;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    z-index: 40;
+}
+.click:hover{
+    transform: scale(1.05);
+}
+.click{
+    cursor: context-menu;
+}
+.close{
+    width: 35px;
+    height: 35px;
+    padding: 0em;
+    font-size: 1.2em;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-family:'Montserrat', sans-serif;
+    position: absolute;
+    right: 20px;
+    top: 20px; 
+}
+
+.fact h2{
+    width: 95%;
+}
+.pops{
+    position: absolute;
+    top: -10%;
+    width: 60px;
+    transition:3s;
+}
+#page1{
+    width: 970px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    left:0px;
+    right: 0px;
+    margin: auto;
+    background-image: url(img/background.svg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:auto 100% ;
+    display: none;
+    transition: 3s;
+    overflow: hidden;
+}
+#page2{
+    transition: 3s;
+    width: 970px;
+    height: 720px;
+    position: inherit;
+    top: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+}
+#fact1{
+    bottom:45%;
+    left:0;
+    right:0;  
+}
+#fact2{
+    top: 40%;
+    left:10%;
+    right:0;
+}
+#fact3{
+    bottom: 30%;
+    left: 0;
+    right: 150px;
+}
+#fact10{
+    bottom:36%;
+    left: 0;
+    right: 0;
+}
+#stocking{
+  width:50px;
+  position: absolute;
+  top:50%;
+  left:28%;
+}
+#mistletoe{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+}
+#string{
+  width:50px;
+  height:100px;
+  position: absolute;
+  left:8.5%;
+}
+
+#santabag{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    bottom: 15%;
+    right: 22%;
+}
+#reindeer2{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 12%;
+    right: 31%;
+    animation: float 6s ease-in-out infinite;
+}
+#snowman:hover, #russia:hover, #kfc:hover, #candycane:hover, #eggnog:hover, #santabag:hover, #santaclaus:hover, stocking:hover, #tree:hover{
+    transform: scale(1.05);
+}
+
+#kfc{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 67.6%;
+    left:38%;
+
+}
+#candycane{
+    width: 66px;
+    position: absolute;
+    bottom:0.4%;
+    left: 10.4%;
+    z-index:1;
+}
+#candycane:hover{
+  animation:wiggle 1s;
+  animation-iteration-count:infinite;
+}
+#eggnog{
+  width:30px;
+  position: absolute;
+  top:72.5%;
+  left:32%
+}
+#table {
+  width:150px;
+  height:auto;
+  position: absolute;
+  top:80%;
+  left:30%;
+}
+#milk{
+    width: 20px;
+    height: 140px;
+    position: absolute;
+    bottom: 12.6%;
+    left: 37.3%;
+}
+#cookie{
+  width:25px;
+  position: absolute;
+  top:81%;
+  left:12%
+}
+
+#page3{
+    transition: left 3s;
+    width: 970px;
+    height: 720px;
+    position:absolute;
+    top: 0;
+    left: 100%;
+    margin: auto;
+    overflow: hidden;
+/*    font-family: 'Montserrat', sans-serif;*/
+}
+#fact4{
+    bottom: 45%;
+    left: 20%;
+}
+
+#fact5{
+    top:32%;
+    left: 22%;
+}
+#fact6{
+    top: 5%;
+    left:12%;
+}
+#fact7{
+    top:45%;
+    left:35%;
+}
+#fact8{
+    bottom: 30%;
+    left:13%;
+    right: 0;
+}
+#fact9{
+    top:25%;
+    left: 10%;
+}
+#santaclaus{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    bottom:10%;
+    left: 12%;
+}
+#house{
+    width: 620px;
+    height: auto;
+    position: absolute;
+    bottom: 2%;
+    right:0%;
+}
+#russia {
+  width:200px;
+  height:100px;
+  position:absolute;
+  top:55%;
+  left:49%;
+  z-index: 1;
+}
+#tree{
+  width:300px;
+  position: absolute;
+  top:29%;
+  left:30px;
+
+}
+#snowman{
+    width: 260px;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
+}
+#fin{
+    width: 970px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    left:0px;
+    right: 0px;
+    margin: auto;
+    display:none;
+    z-index: 50;
+}
+#back{
+    position: absolute;
+    width: 970px;
+    height: 720px;
+    background-image:url(img/background2.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#last{
+    text-align: center;
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    padding:10px;
+    background-color:white;
+    color: black;
+    border-radius: 30px;
+    border: 5px solid darkred;
+    z-index: 40;
+}
+#last h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+

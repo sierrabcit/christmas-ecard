@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sierra Schuss Christmas Ecard</title>
+        <link href="index.css" type="text/css" rel="stylesheet">
+    </head>
+    
+    <body>
+      
+      <div class="controls">
+      <button class="musicbtn" onclick="playSong()" type="button">Play Song</button>
+      <button class="musicbtn" onclick="pauseSong()" type="button">Pause Song</button>
+       </div>
+      
+        <audio id="song">
+            <source src="smstation.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div id="wrapper">
+            <h2 id="title" class="additional">10 Facts About Christmas!</h2>
+            <p class="subtitle">Click the flashing title above to begin!</p>
+            <img id="reindeer" src="img/reindeer.svg"/>
+        </div>
+        
+        <div id="page1">  
+            <div id="page2">
+              
+                 <audio id="jinglebells">
+            <source src="jinglebells.mp3" type="audio/mpeg">
+                </audio>
+
+                <img id="santabag" class="click" src="img/santabag.svg" />
+                <img id="reindeer2" class="click" src="img/reindeer.svg" />
+                <img id="string" class="additional" src="img/string.svg">
+                <img id="mistletoe" class="additional" src="img/mistletoe.svg"  />
+                <img id="candycane" class="click" src="img/candycane.svg" />
+                <img id="tree" class="click" src="img/presents.svg"/>
+                <img id="kfc" class="click" src="img/kfc.svg"/>
+
+                <div id="fact1" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact1C" class="close">X</button>
+                    <p>
+                    In 1914, during World War 1, there was a now famous Christmas truce in the trenches between British and German soldiers. They exchanged gifts across a neutral no man’s land, played football (soccer) together, and decorated their shelves.
+                    </p>
+                </div>
+                <div id="fact2" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact2C" class="close">X</button>
+                    <p>
+                    The song "Rudolph the Red-Nosed Reindeer" was recorded about a decade after Rudolph himself was created as a character. It was recorded by Gene Autry and over 150 million copies were sold!
+                    </p>
+                </div>
+                <div id="fact3" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact3C" class="close">X</button>
+                    <p>
+                    The world's largest candy cane was built in 2011 and stands at 63 feet! It was built by a pastry chef from Geneva, Illinois, USA.
+                    </p>
+                </div>
+                <div id="fact10" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact10C" class="close">X</button>
+                    <p>
+                   In Japan, it is considered tradition to eat Kentucky Fried Chicken (KFC) for Christmas dinner. You have to place an order two months in advance.
+                    </p>
+                </div>
+                <div id="fact6" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact6C" class="close">X</button>
+                    <p>
+                    The modern Christmas tree originated in 16th century Germany and became popular in mid-19th century England because of Queen Victoria’s husband, Prince Albert (who was German).
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="page3">
+                
+              <audio id="hohoho">
+            <source src="hohoho.mp3" type="audio/mpeg">
+              </audio>
+              
+              
+                <img id="russia" class="click" src="img/flags.svg"/>
+                <img id="stocking" class="additional" src="img/stocking.svg"/>
+                <img id="house" src="img/house.svg" />
+                <img id="cookie" class="click" src="img/cookie.svg"/>
+                <img id="santaclaus" class="click" src="img/santaclaus.svg" />
+                <img id="snowman" class="click" src="img/snowman.svg" />
+                <img id="eggnog" class="click"   src="img/eggnog.svg"/>
+                <img id="milk" class="additional" src="img/milk.svg"/>
+                <img id="table" src="img/table.svg"/>
+              
+                <div id="fact4" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact4C" class="close">X</button>
+                    <p>
+                    Christmas is celebrated on January 7 in countries which are Eastern Orthodox, such as Russia. 
+                    </p>
+                </div>
+                <div id="fact5" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact5C" class="close">X</button>
+                    <p>
+                    Saint Nicholas, the real person Santa Claus was adapted from, lived in 4th century AD in the province of Lycia on the southwest coast of Asia Minor. 
+                    </p>
+                </div>
+                
+                <div id="fact7" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact7C" class="close">X</button>
+                    <p>
+                    Coca-Cola was the first company that used Santa Claus during the winter season for promotion.
+                    </p>
+                </div>
+                <div id="fact8" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact8C" class="close">X</button>
+                    <p>
+                    America’s first batch of eggnog was made in the Jamestown settlement in 1607. Its name comes from the word “grog”, meaning any drink made with rum. Non-alcoholic eggnog is popular as well.
+                    </p>
+                </div>
+                <div id="fact9" class="fact"> 
+                    <h2>Did you know?</h2>
+                    <button id="fact9C" class="close">X</button>
+                    <p>
+                 Christmas stockings were traditionally filled with food to eat, and sometimes small gifts.
+                    </p>
+                </div>
+                
+            </div> 
+            
+            <div id="factNum">10</div>
+            
+            <img src="img/left-arrow.svg" id="left" class="pageButton"/>
+            <img src="img/right-arrow.svg" id="right" class="pageButton" />
+      
+        </div>
+        
+        <div id="fin">
+            <div id=back></div>
+            <div id="last"><h2>Thanks for playing!<br/> Merry Christmas and Happy Holidays!</h2></div>
+        </div>
+      
+    <canvas id="canvas"></canvas>  
+    <script src="index.js"></script>
+      <script src="snow.js"></script>
+    </body>
+</html>
